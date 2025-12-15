@@ -278,3 +278,28 @@ message db "Booting MyOS...", 0
 
 times 510-($-$$) db 0
 dw 0xAA55
+
+
+
+
+
+
+
+
+nasm -f bin boot.asm -o boot.bin
+
+
+echo $?
+
+
+
+
+
+stat boot.bin
+
+
+
+
+
+
+
