@@ -1,3 +1,29 @@
+
+
+nasm -f bin test.asm -o test.bin
+ls -lh test.bin
+
+
+
+
+===========================
+
+
+ls -l boot.bin
+stat boot.bin
+nasm -f bin boot.asm -o boot.bin
+echo $?
+=====================
+
+
+
+
+
+
+
+
+
+
 # Operating-system-using-C-v2
 hexdump -C boot.bin | tail
 000001f0  ... 55 aa
